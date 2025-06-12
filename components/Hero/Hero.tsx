@@ -2,10 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../src/app/assets/logo.svg";
+import right from "../../src/app/assets/rightArrow.png";
+import group from "../../src/app/assets/group.png";
 
 export const Hero = () => {
   return (
-    <div className="bg-orange-50 min-h-screen overflow-hidden ">
+    <div className="bg-orange-50 min-h-screen overflow-hidden mb-20 ">
       <div className="mr-5 ml-5">
         {/* navigation bar */}
         <div className="flex justify-between items-center mt-12">
@@ -55,7 +57,24 @@ export const Hero = () => {
             {/* learning animation svg */}
             <div></div>
           </div>
-          <button></button>
+          <div className="flex items-center mt-10 gap-7">
+            <div className="flex items-center gap-5 bg-linear-to-br from-orange-700 to-orange-400 p-2 hover:bg-amber-600 text-white font-light rounded-2xl">
+              <Link href={"#"}>Get Started Today</Link>
+              <Image
+                src={right}
+                alt="right-arrow"
+                className="w-4 h-4 text-white"
+              />
+            </div>
+            <div className=" border-orange-500 border-1 bg-white  hover:bg-orange-500 hover:text-white text-orange-400 font-light rounded-2xl p-3 ">
+              <Link href="#">Live Session</Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="size-18 rounded-full bg-radial-[at_25%_25%] from-white to-zinc-900 to-75% flex flex-col justify-center relative mt-10 mb-10">
+          <h1 className="font-bold text-orange-500 mt-5 text-2xl">10K</h1>
+          {/* <p>Active Members</p> */}
         </div>
       </div>
     </div>
