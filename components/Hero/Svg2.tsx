@@ -1,8 +1,8 @@
 import React from "react";
 
-const SvgAnimation = () => {
+const Svg2 = () => {
   return (
-    <div className="items-center ml-14">
+    <div className="items-center ml-2">
       <svg
         data-lov-id="src/components/svg/MentorStudentSVG.tsx:10:4"
         data-lov-name="svg"
@@ -353,4 +353,4 @@ const SvgAnimation = () => {
   );
 };
 
-export default SvgAnimation;
+export default Svg2;

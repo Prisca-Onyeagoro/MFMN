@@ -3,3 +3,9 @@
 body {
   @apply bg-amber-400;
 }
+@media (width: 820px) {
+  .only-820px {
+    display: flex;
+    flex-direction: row;
+  }
+}
